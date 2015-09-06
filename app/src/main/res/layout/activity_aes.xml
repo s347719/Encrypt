@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+                tools:context="com.shuhuan.encrypt.app.AESActivity">
+
+    <TextView
+            android:text="AES 加密"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:id="@+id/aes_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I love you"
+            />
+
+
+    <EditText
+            android:id="@+id/aes_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码(16bits)"
+            android:text="0123456789ABCDEF"
+            />
+
+    <EditText
+            android:id="@+id/aes_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结果"
+            />
+
+    <EditText
+            android:id="@+id/aes_oriengin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="原始结果"
+            />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnAES1Encrypt"
+            android:text="方式1加密"
+            />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnAES1DeEncrypt"
+            android:text="方式1 解密"
+            />
+</LinearLayout>
